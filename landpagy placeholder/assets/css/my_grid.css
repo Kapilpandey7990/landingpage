@@ -1,0 +1,200 @@
+.mm_grid{
+    background-color:#590065;
+     /* height: 20%; */
+     width: 40px; 
+     border-radius: 20px; 
+     margin: 5px; 
+     color: white; 
+     /* text-align: justify;  */
+     min-height: 20vh;
+     align-items: center;
+     text-align: center;
+     vertical-align: middle;
+     justify-content: center;
+}
+
+
+
+.my_ro{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.my_logo{
+    margin: 5% 30%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5%;
+    background-color: black;
+    
+}
+
+.my_par{
+    margin: 5% 0 8% 0;
+    /* font-size:large; */
+    font-weight: bold;
+    font-size: small;
+}
+.my_par1{
+    margin: 10% 5%   ;
+    font-size:large;
+    color: rgb(8, 7, 7);
+
+    /* font-weight: bold; */
+    
+}
+
+.my_promi{
+    /* background-color:#590065/; */
+    border-color: #590065;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.Ch_gr{
+    margin:0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.my_gr_h{
+    
+    /* font-size: 60% ; */
+    /* font-size: large; */
+    text-align: center;
+    margin: 5% 10%;
+    color:black;
+    
+}
+.mm_grid1{
+    background-color:#d0cfd1;
+     /* height: 20%; */
+     width: 40px; 
+     border-radius: 20px; 
+     border: 2px solid #590065;
+     
+     margin: 5px; 
+     /* color: white;  */
+     text-align: justify; 
+     min-height: 40vh;
+     text-align: center;
+     vertical-align: middle;
+}
+
+
+/* responsive css */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #590065;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.logo-container {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color: #fff; /* Background color for the circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-container img {
+    width: 50%; /* Adjust as needed */
+    height: 50%;
+    border-radius: 50%;
+    
+}
+
+/* Responsive design */
+/* @media (max-width: 768px) {
+    .grid-item {
+        width: calc(50% - 10px); Adjusted width for medium screens
+    }
+} */
+
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* promise */
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item1 {
+background-color: #ebeaea;
+color: rgb(19, 18, 18);
+padding: 20px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+/* height: 50vh; */
+
+
+}
+
+.logo-container1 {
+width: 50px; /* Adjust as needed */
+height: 50px; /* Adjust as needed */
+background-color: #fff; /* Background color for the circle */
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 15%;
+margin-top: 10%;
+/* margin: 0% 0 20% 0; */
+}
+
+.logo-container img {
+width: 50%; /* Adjust as needed */
+height: 50%;
+border-radius: 50%;
+
+}
+
+/* Responsive design */
+/* @media (max-width: 768px) {
+.grid-item {
+    width: calc(50% - 10px); Adjusted width for medium screens
+}
+} */
+
+
+@media (max-width: 480px) {
+.grid-container1 {
+    grid-template-columns: 1fr;
+}
+}
+

@@ -1,0 +1,215 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive 3x3 Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: #590065;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Heading 1</h2>
+                <p>This is paragraph 1.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Heading 2</h2>
+                <p>This is paragraph 2.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Heading 3</h2>
+                <p>This is paragraph 3.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Heading 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error modi soluta nisi dignissimos quidem eius nihil dolorum, sint, assumenda laborum culpa velit impedit voluptate, perspiciatis sapiente obcaecati labore reiciendis tempora!</p>
+            </div>
+            <div class="grid-item">
+                <h2>Heading 5</h2>
+                <p>This is paragraph 5.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Heading 6</h2>
+                <p>This is paragraph 6.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Heading 7</h2>
+                <p>This is paragraph 7.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Heading 8</h2>
+                <p>This is paragraph 8.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Heading 9</h2>
+                <p>This is paragraph 9.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+<!-- grid with Logo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive 3x3 Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-container1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+}
+
+.grid-item1 {
+    background-color: #590065;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    
+    
+}
+
+.logo-container1 {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color: #fff; /* Background color for the circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 10px; */
+    /* margin: 0% 0 20% 0; */
+}
+
+.logo-container img {
+    width: 50%; /* Adjust as needed */
+    height: 50%;
+    border-radius: 50%;
+    
+}
+
+/* Responsive design */
+/* @media (max-width: 768px) {
+    .grid-item {
+        width: calc(50% - 10px); Adjusted width for medium screens
+    }
+} */
+
+
+@media (max-width: 480px) {
+    .grid-container1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container1">
+            <div class="grid-item1">
+                <div class="logo-container1">
+                  <img src="assets/images/Test images/icons8-laptop-16.png" alt="Logo 9">
+              </div>
+                <h2>Complete Payment Security</h2>
+                  <p class="my_par">Your funds are securely held in a bank, ensuring a protected financial environment.</p>
+              </div>
+            <div class="grid-item1">
+                <div class="logo-container1">
+                    <img src="assets/images/Test images/icons8-laptop-16.png" alt="Logo 9">
+                </div>
+              <h2>Safeguarding Interests of Both Parties</h2>
+                  <p class="my_par">As a neutral third party, we foster trust and confidence in every transaction.</p>
+              </div>
+            <div class="grid-item1">
+                <div class="logo-container1">
+                  <img src="assets/images/Test images/icons8-laptop-16.png" alt="Logo 9">
+              </div>
+              <h2>Comprehensive Project Management</h2>
+                  <p class="my_par">We provide services including contract creation, invoicing, project tracking, and milestone-based payments.</p>
+              </div>
+            
+        </div>
+    </div>
+</body>
+</html>

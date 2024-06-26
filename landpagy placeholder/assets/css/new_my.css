@@ -1,0 +1,40 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+} */
+
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+#step1 { top: 1%;left: 50%; }
+#step2 { top: 26%;left: 95%; }
+#step3 { top: 70%; left: 96%; }
+#step4 { top: 98%;left: 50%; }
+#step5 { top: 70%; left: 6%; }
+#step6 { top: 28%; left: 7%; }

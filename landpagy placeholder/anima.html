@@ -1,0 +1,192 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANimation_Trustopay</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100%;
+            border: 2px solid black;
+            height: 40vh;
+            justify-content: center;
+            justify-content: space-between;
+        }
+        .box1{
+            margin: auto ;
+            margin-right: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border-radius: 80px;
+            height: 150px;
+            width: 150px;
+        }
+        .box2{
+            margin: auto;
+            /* margin-left: 0; */
+            box-sizing: border-box;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border-radius: 80px;
+            height: 150px;
+            width: 150px;
+            
+        }
+        .box3{
+            margin: auto ;
+
+            box-sizing: border-box;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border-radius: 80px;
+            height: 150px;
+            width: 150px;
+
+        }
+        .myl{
+            border: 1px solid black;
+        height: 1px;
+        width: 5vw;
+        margin: auto;
+        margin-left: 0;
+        margin-right: 0;
+
+        }
+        .myl:hover{
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="myl"> </div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation_Trustopay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            height: 40vh;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #590065;
+            position: relative;
+            z-index: 2;
+        }
+
+        .myl {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: calc(100% - 300px); /* 100% minus the total width of the boxes */
+            height: 1px;
+            background-color: black;
+            z-index: 1;
+            animation: drawLine 8s infinite;
+            opacity: 1;
+        }
+
+        @keyframes drawLine {
+            0%, 12.5% {
+                width: 0;
+            }
+            25%, 37.5% {
+                width: calc(100% - 300px);
+            }
+            50%, 62.5% {
+                width: calc(100% - 150px);
+            }
+            75%, 100% {
+                width: 0;
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 10px #590065;
+            }
+            50% {
+                box-shadow: 0 0 20px #590065;
+            }
+        }
+
+        .box:nth-child(1) {
+            animation: glow 8s infinite, highlight 2s 0s forwards;
+        }
+
+        .box:nth-child(2) {
+            animation: glow 8s infinite 2s, highlight 2s 2s forwards;
+        }
+
+        .box:nth-child(3) {
+            animation: glow 8s infinite 4s, highlight 2s 4s forwards;
+        }
+
+        @keyframes highlight {
+            0% {
+                background-color: #590065;
+                color: white;
+            }
+            100% {
+                background-color: #9c27b0;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="myl"></div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
